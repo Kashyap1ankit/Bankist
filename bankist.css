@@ -821,7 +821,7 @@ body {
   .sort {
     display: flex;
     position: absolute;
-    top: 69%;
+    top: 76%;
     left: 66%;
     margin-top: 15px;
   }
@@ -832,7 +832,7 @@ body {
 
   .timer {
     position: absolute;
-    top: 67%;
+    top: 75%;
     left: 80%;
     margin-top: 20px;
     opacity: 0;
