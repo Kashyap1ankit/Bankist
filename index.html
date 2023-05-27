@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/Bankist icon.png" />
+    <title>Bankist Site</title>
+    <link rel="stylesheet" href="bankist.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+
+    <nav class="navigation">
+      <div class="leftnav">
+        <h2>Log in to get started</h2>
+      </div>
+
+      <div class="centernav">
+        <img src="/logo.png" alt="logo" />
+      </div>
+
+      <div class="rightnav">
+        <form class="login">
+          <input type="text" placeholder="User" class="input-login-username" />
+          <input
+            type="password"
+            placeholder="Pin"
+            class="input-login-pin"
+            maxlength="4"
+          />
+          <button class="login-btn">&rarr;</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- Wrong Account Modal -->
+
+    <p class="cross2 hidden">&#215;</p>
+
+    <div class="modal2 hidden">
+
+     <h2>DISCLAIMER</h2>
+
+     <p>Acoount Doesn't Exist</p>
+
+    
+
+    </div>
+
+    <!-- Account CLosed Modal -->
+
+    <p class="cross hidden">&#215;</p>
+
+    <div class="modal hidden">
+
+     <h2>DISCLAIMER</h2>
+
+     <p>Acoount Closed</p>
+
+    
+
+    </div>
+
+    <!-- Balance Showing Section -->
+
+    <div class="balance-section">
+      <div class="balance-text">
+        <h1>Current balance</h1>
+        <p class="date-time">As of 11/03/2023, 21:36</p>
+      </div>
+
+      <div class="balance">₹59,539</div>
+    </div>
+
+    <!-- Movements -->
+
+    <div class="movements">
+      
+
+      <div class="movements-box">
+        <div class="movement-type--deposit">2 Deposit</div>
+        <div class="movement-date">11/03/2023</div>
+        <div class="movement-amount">₹2000</div>
+      </div>
+
+      <div class="movements-box">
+        <div class="movement-type--withdraw">1 Withdraw</div>
+        <div class="movement-date">11/03/2023</div>
+        <div class="movement-amount">₹2000</div>
+      </div>
+    </div>
+
+    <!--Transfer Money-->
+
+    <div class="transfer--money">
+      <h3>Transfer Money</h3>
+
+      <div class="input--box">
+        <input type="text" name="tarnsfer to" id="transfer--to" />
+
+        <input type="text" name="amount" id="amount" />
+
+        <button class="transfer-btn">&rarr;</button>
+      </div>
+
+      <div class="input--box--undername">
+        <p class="input--box--undername--transferto">Transfer To</p>
+
+        <p>Amount</p>
+      </div>
+    </div>
+
+  
+    <!-- Close Your Account -->
+
+   
+
+    <div class="close--account">
+      <h3>Close Account</h3>
+
+      <div class="input--box">
+         <input type="text" name="amount" id="user" />
+
+     <input type="password" name="pin" id="pin" maxlength="4" />
+
+        <button class="close--btn">&rarr;</button>
+      </div>
+
+      <div class="input--box--undername">
+        <p class="input--box--undername--Confirm--user"> Confirm User</p>
+
+        <p  class="input--box--undername--Confirm--pin"></p>Confirm Pin</p>
+    </div>
+
+
+    </div>
+     <!-- --Get the loan-- -->
+
+     <div class="loan">
+
+      <h3>Request Loan</h3>
+
+      <div class="input--box">
+
+      <input type="text" name="amount" id="amount2" />
+
+      <button class="loan-btn">&rarr;</button>
+
+    </div>
+
+      <p>Amount</p>
+
+    </div>
+
+
+    <!-- Total Calculation -->
+
+    <div class="calculation">
+
+      <p> IN <span class="total--deposited">₹25000</span> </p>
+    <p> OUT <span class="total--withdrew"> ₹25000</span></p>
+    <p> INTEREST <span class="total--Interest">₹25000</span></p>
+    </div>
+
+    <!-- Sorting Feature -->
+
+    <div class="sort">
+
+      <div class="sortingArrow"><p>&darr;</p></div>
+
+      <p>Sort</p>
+
+      
+    </div>
+
+    <!-- Countdown Timer feature -->
+
+    <div class="timer">
+
+      <p>You will be logout in <span class="countdown">10:00</span></p>
+    </div>
+
+    
+    <script src="bankist.js"></script>
+  </body>
+</html>
