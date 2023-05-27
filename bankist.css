@@ -449,7 +449,7 @@ body {
   position: absolute;
   top: 100%;
   left: 20%;
-  margin-top: 50px;
+  margin-top: 20px;
   opacity: 0;
 }
 
@@ -800,7 +800,7 @@ body {
   position: absolute;
   top: 70%;
   left: 3%;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .calculation p {
