@@ -1,0 +1,845 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-anchor: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  background-color: #f3f3f3;
+}
+
+/*Navigation Bar */
+
+.navigation {
+  display: flex;
+}
+.navigation .leftnav {
+  margin: 2% 5% 0% 2%;
+  font-family: "Sono", sans-serif;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navigation .centernav {
+  margin: auto;
+  margin-left: 25%;
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+.navigation .centernav img {
+  width: 50%;
+}
+
+.navigation .rightnav {
+  margin-top: 1%;
+  margin-left: 20%;
+}
+
+/* Username Input In Naviagtion Bar  */
+
+.login .input-login-username {
+  border-radius: 20px;
+  padding: 2%;
+  outline: none;
+  border: none;
+  width: 30%;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  text-align: center;
+  margin-left: 20%;
+}
+
+/* Pim Input In Naviagtion Bar  */
+
+.login .input-login-pin {
+  border-radius: 20px;
+  padding: 2%;
+  outline: none;
+  border: none;
+  width: 30%;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  text-align: center;
+}
+
+/* Login Button In Naviagtion Bar  */
+
+.login .login-btn {
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+  margin-left: 3%;
+  font-size: 180%;
+}
+
+/* Balance Section */
+
+.balance-section {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: 100vw;
+  opacity: 0;
+}
+
+.balance-section .balance-text {
+  margin-left: 250px;
+}
+
+.balance-section .balance-text h1 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  opacity: 0.8;
+  font-weight: 1500;
+}
+.balance-section .balance-text .date-time {
+  opacity: 0.5;
+}
+
+.balance-section .balance {
+  margin-left: 40%;
+  font-size: 40px;
+}
+
+.deposit {
+  background-color: #9be15d;
+}
+
+.withdraw {
+  background-color: #dd2100;
+}
+
+/* Disclaimer-- Account closed  */
+
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  background-color: #ff001598;
+}
+
+.modal h2 {
+  margin: 0px 0px 10px;
+  background-color: #ff0015;
+  padding: 10px 20px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f3f3f3;
+  letter-spacing: 5px;
+}
+
+.modal p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.cross {
+  position: absolute;
+  top: 29%;
+  left: 59.5%;
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  z-index: 2;
+}
+.cross:hover {
+  cursor: pointer;
+}
+
+/* Disclaimer-- Account Doesn't exist  */
+
+.modal2 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  background-color: #ff001598;
+}
+
+.modal2 h2 {
+  margin: 0px 0px 10px;
+  background-color: #ff0015;
+  padding: 10px 20px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f3f3f3;
+  letter-spacing: 5px;
+}
+
+.modal2 p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.cross2 {
+  position: absolute;
+  top: 29%;
+  left: 59.5%;
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  z-index: 2;
+}
+.cross:hover {
+  cursor: pointer;
+}
+
+.cross2:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Movements */
+
+.movements {
+  overflow: scroll;
+  width: 40%;
+  height: 63vh;
+  margin-left: 16%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  opacity: 0;
+}
+
+.movements .movements-box {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-bottom: 1px solid rgb(18, 17, 17, 0.1);
+}
+
+.movements .movements-box .movement-type--deposit {
+  text-align: center;
+  font-size: 13px;
+  width: 25%;
+  border-radius: 20px;
+  padding: 5px 3px;
+  margin: 0px;
+  margin-left: 1%;
+  margin-right: 5%;
+  background-color: #9be15d;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.movements .movements-box .movement-type--withdraw {
+  text-align: center;
+  font-size: 13px;
+  width: 25%;
+  border-radius: 20px;
+  padding: 5px 3px;
+  margin: 0px;
+  margin-left: 1%;
+  margin-right: 5%;
+  background-color: #a40000;
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: "Poppins", sans-serif;
+}
+
+.movements .movements-box .movement-date {
+  margin-top: 1%;
+  margin-left: 3%;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.movements .movements-box .movement-amount {
+  margin-left: 40%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Transfer Money Section */
+
+.transfer--money {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  width: 20%;
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.transfer--money h3 {
+  margin-bottom: 5%;
+  text-align: left;
+  font-size: 17px;
+  font-family: "Kanit", sans-serif;
+}
+
+.transfer--money .input--box {
+  display: flex;
+}
+
+.transfer--money .input--box #transfer--to {
+  text-align: center;
+  width: 40%;
+  margin-right: 5%;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.transfer--money .input--box #amount {
+  text-align: center;
+  width: 40%;
+  margin-right: 15px;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.transfer--money .input--box .transfer-btn {
+  background-color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.transfer--money .input--box--undername {
+  display: flex;
+  margin-top: 10px;
+}
+
+.transfer--money .input--box--undername .input--box--undername--transferto {
+  margin-right: 55px;
+  margin-left: 15px;
+}
+
+/* close account */
+
+.close--account {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  width: 20%;
+  position: absolute;
+  top: 55%;
+  right: 20%;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.close--account h3 {
+  margin-bottom: 5%;
+  text-align: left;
+  font-size: 17px;
+  font-family: "Kanit", sans-serif;
+}
+
+.close--account .input--box {
+  display: flex;
+}
+
+.close--account .input--box #user {
+  text-align: center;
+  width: 40%;
+  margin-right: 5%;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.close--account .input--box #pin {
+  text-align: center;
+  width: 40%;
+  margin-right: 15px;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.close--account .input--box .close--btn {
+  background-color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.close--account .input--box--undername {
+  display: flex;
+  margin-top: 10px;
+}
+
+.close--account .input--box--undername .input--box--undername--Confirm--user {
+  margin-left: 10px;
+}
+
+.close--account .input--box--undername .input--box--undername--Confirm--pin {
+  margin-left: 30px;
+}
+
+/* Get The Loan */
+
+.loan {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  width: 20%;
+  position: absolute;
+  top: 75%;
+  right: 20%;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.loan h3 {
+  margin-bottom: 5%;
+  text-align: left;
+  font-size: 17px;
+  font-family: "Kanit", sans-serif;
+}
+
+.loan .input--box {
+  display: flex;
+}
+
+.loan .input--box #amount2 {
+  text-align: center;
+  width: 40%;
+  margin-right: 5%;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.loan .input--box .loan-btn {
+  background-color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.loan p {
+  margin-top: 10px;
+}
+
+/* Calculations */
+
+.calculation {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.calculation p {
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.calculation .total--deposited {
+  color: #22a800;
+  font-size: 25px;
+}
+
+.calculation .total--withdrew {
+  color: #d3411c;
+  font-size: 25px;
+}
+
+.calculation .total--Interest {
+  color: #22a800;
+  font-size: 25px;
+}
+
+.sort {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 53%;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.sort p {
+  font-size: 17px;
+}
+
+.sortingArrow {
+  margin-right: 5px;
+}
+
+.sortingArrow:hover {
+  cursor: pointer;
+}
+
+.timer {
+  position: absolute;
+  top: 100%;
+  left: 65%;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.timer p {
+  font-size: 17px;
+}
+
+/*1.media queries for smaller phone upto 400px */
+
+@media (max-width: 400px) {
+  /*Navigation Bar */
+
+  .navigation .leftnav {
+    margin: 1% 2% 0% 1%;
+    font-size: 10px;
+  }
+
+  .navigation .centernav {
+    margin-left: 25%;
+    margin-right: 1%;
+  }
+
+  .navigation .rightnav {
+    margin-top: 1%;
+    margin-left: 10%;
+  }
+
+  /* Username Input In Naviagtion Bar  */
+
+  .login .input-login-username {
+    border-radius: 15px;
+    width: 35%;
+    margin-left: 2%;
+  }
+
+  /* Pin Input In Naviagtion Bar  */
+
+  .login .input-login-pin {
+    border-radius: 15px;
+    width: 35%;
+  }
+
+  /* Login Button In Naviagtion Bar  */
+
+  .login .login-btn {
+    margin-left: 1%;
+    font-size: 130%;
+  }
+}
+
+/* Balance Section */
+
+.balance-section {
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.balance-section .balance-text {
+  margin-left: 50px;
+}
+
+.balance-section .balance-text h1 {
+  font-size: 15px;
+}
+.balance-section .balance-text .date-time {
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.balance-section .balance {
+  margin-left: 30%;
+  font-size: 20px;
+}
+
+/* Disclaimer-- Account closed  */
+
+.modal {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.modal h2 {
+  font-size: 20px;
+}
+
+.modal p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.cross {
+  position: absolute;
+  top: 24%;
+  left: 74.5%;
+}
+
+/* Disclaimer-- Account Doesn't exist  */
+
+.modal2 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.modal2 h2 {
+  font-size: 20px;
+}
+
+.modal2 p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.cross2 {
+  position: absolute;
+  top: 24%;
+  left: 74.5%;
+}
+
+/* Movements */
+
+.movements {
+  width: 60%;
+  height: 50vh;
+  margin-left: 5%;
+}
+
+.movements .movements-box {
+  padding: 15px;
+}
+
+.movements .movements-box .movement-type--deposit {
+  font-size: 7px;
+  width: 25%;
+  border-radius: 15px;
+  padding: 5px 3px;
+  margin-left: 1%;
+  margin-right: 5%;
+}
+
+.movements .movements-box .movement-type--withdraw {
+  font-size: 6px;
+  width: 25%;
+  border-radius: 15px;
+  padding: 5px 2px;
+  margin-left: 1%;
+  margin-right: 5%;
+}
+
+.movements .movements-box .movement-date {
+  margin-top: 1%;
+  margin-left: 3%;
+  font-size: 7px;
+  font-family: "Poppins", sans-serif;
+}
+
+.movements .movements-box .movement-amount {
+  font-size: 10px;
+  margin-left: 20%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Transfer Money Section */
+
+.transfer--money {
+  width: 33%;
+  position: absolute;
+  top: 19%;
+  right: 0%;
+  padding: 10px 10px;
+}
+
+.transfer--money h3 {
+  margin-bottom: 5%;
+  font-size: 10px;
+}
+
+.transfer--money .input--box #transfer--to {
+  font-size: 7px;
+  width: 25%;
+  margin-right: 10%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.transfer--money .input--box #amount {
+  font-size: 7px;
+  width: 25%;
+  margin-right: 10%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.transfer--money .input--box .transfer-btn {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.transfer--money .input--box--undername {
+  margin-left: 0px;
+  margin-top: 10px;
+  font-size: 7px;
+}
+
+.transfer--money .input--box--undername .input--box--undername--transferto {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+/* close account */
+
+.close--account {
+  width: 33%;
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  padding: 10px 10px;
+}
+
+.close--account h3 {
+  margin-bottom: 5%;
+  font-size: 10px;
+}
+
+.close--account .input--box #user {
+  font-size: 7px;
+  width: 25%;
+  margin-right: 10%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.close--account .input--box #pin {
+  font-size: 7px;
+  width: 25%;
+  margin-right: 10%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.close--account .input--box .close--btn {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.close--account .input--box--undername {
+  margin-left: 0px;
+  margin-top: 10px;
+  font-size: 7px;
+}
+
+.close--account .input--box--undername .input--box--undername--Confirm--user {
+  margin-left: 0px;
+}
+
+.close--account .input--box--undername .input--box--undername--Confirm--pin {
+  margin-left: 5px;
+}
+
+/* Get The Loan */
+
+.loan {
+  width: 33%;
+  position: absolute;
+  top: 51%;
+  right: 0%;
+  padding: 10px 10px;
+}
+
+.loan h3 {
+  margin-bottom: 5%;
+  font-size: 10px;
+}
+
+.loan .input--box #amount2 {
+  font-size: 7px;
+  width: 25%;
+  margin-right: 10%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.loan .input--box .loan-btn {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.loan p {
+  margin-top: 10px;
+  font-size: 7px;
+}
+
+/* Calculations */
+
+.calculation {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  margin-top: 5px;
+}
+
+.calculation p {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.calculation .total--deposited {
+  font-size: 15px;
+}
+
+.calculation .total--withdrew {
+  font-size: 15px;
+}
+
+.calculation .total--Interest {
+  font-size: 15px;
+}
+
+.sort {
+  display: flex;
+  position: absolute;
+  top: 69%;
+  left: 64%;
+  margin-top: 12px;
+}
+
+.sort p {
+  font-size: 15px;
+}
+
+.timer {
+  position: absolute;
+  top: 67%;
+  left: 80%;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.timer p {
+  font-size: 10px;
+}
