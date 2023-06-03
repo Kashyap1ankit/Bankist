@@ -214,6 +214,7 @@ body {
   margin-left: 16%;
   border: none;
   border-radius: 20px;
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   opacity: 0;
 }
@@ -510,40 +511,46 @@ body {
 @media (max-width: 400px) {
   /*Navigation Bar */
 
+  .navigation {
+    display: block;
+  }
+
   .navigation .leftnav {
-    margin: 1% 2% 0% 1%;
-    font-size: 8px;
+    margin-top: 2%;
+    font-size: 10px;
   }
 
   .navigation .centernav {
-    margin-left: 30%;
-    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 40%;
+    width: 20%;
   }
 
   .navigation .rightnav {
-    margin-top: 1%;
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 15%;
   }
 
   /* Username Input In Naviagtion Bar  */
 
   .login .input-login-username {
-    border-radius: 15px;
+    border-radius: 10px;
     width: 35%;
-    margin-left: 2%;
+    margin-left: 0%;
   }
 
   /* Pin Input In Naviagtion Bar  */
 
   .login .input-login-pin {
-    border-radius: 15px;
+    border-radius: 10px;
+    margin-left: 5%;
     width: 35%;
   }
 
   /* Login Button In Naviagtion Bar  */
 
   .login .login-btn {
-    margin-left: 1%;
+    margin-left: 5%;
     font-size: 130%;
   }
 
@@ -567,7 +574,7 @@ body {
   }
 
   .balance-section .balance {
-    margin-left: 30%;
+    margin-left: 43%;
     font-size: 20px;
   }
 
@@ -622,9 +629,11 @@ body {
   /* Movements */
 
   .movements {
-    width: 60%;
+    width: 95vw;
     height: 50vh;
-    margin-left: 5%;
+    margin: 0 5%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
   .movements .movements-box {
@@ -632,17 +641,17 @@ body {
   }
 
   .movements .movements-box .movement-type--deposit {
-    font-size: 7px;
-    width: 25%;
+    font-size: 9px;
+    width: 15%;
     border-radius: 15px;
-    padding: 5px 3px;
+    padding: 5px;
     margin-left: 1%;
-    margin-right: 5%;
+    margin-right: 8%;
   }
 
   .movements .movements-box .movement-type--withdraw {
-    font-size: 6px;
-    width: 25%;
+    font-size: 9px;
+    width: 15%;
     border-radius: 15px;
     padding: 5px 2px;
     margin-left: 1%;
@@ -651,14 +660,14 @@ body {
 
   .movements .movements-box .movement-date {
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 10%;
     font-size: 7px;
     font-family: "Poppins", sans-serif;
   }
 
   .movements .movements-box .movement-amount {
     font-size: 10px;
-    margin-left: 20%;
+    margin-left: 40%;
     font-family: "Poppins", sans-serif;
   }
 
@@ -667,9 +676,10 @@ body {
   .transfer--money {
     width: 33%;
     position: absolute;
-    top: 19%;
-    right: 0%;
+    top: 90%;
+    right: 60%;
     padding: 10px 10px;
+    margin-top: 10%;
   }
 
   .transfer--money h3 {
@@ -714,9 +724,10 @@ body {
   .close--account {
     width: 33%;
     position: absolute;
-    top: 35%;
-    right: 0%;
+    top: 90%;
+    right: 5%;
     padding: 10px 10px;
+    margin-top: 10%;
   }
 
   .close--account h3 {
@@ -764,9 +775,10 @@ body {
   .loan {
     width: 33%;
     position: absolute;
-    top: 51%;
-    right: 0%;
+    top: 100%;
+    right: 33%;
     padding: 10px 10px;
+    margin-top: 17%;
   }
 
   .loan h3 {
@@ -796,9 +808,10 @@ body {
 
   .calculation {
     position: absolute;
-    top: 70%;
+    top: 82%;
     left: 3%;
-    margin-top: 50px;
+    margin-top: 8%;
+    margin-bottom: 17%;
   }
 
   .calculation p {
@@ -821,9 +834,9 @@ body {
   .sort {
     display: flex;
     position: absolute;
-    top: 76%;
-    left: 66%;
-    margin-top: 15px;
+    top: 82%;
+    left: 85%;
+    margin-top: 8%;
   }
 
   .sort p {
@@ -832,13 +845,13 @@ body {
 
   .timer {
     position: absolute;
-    top: 75%;
-    left: 80%;
-    margin-top: 20px;
+    top: 100%;
+    left: 33%;
+    margin-top: 45%;
     opacity: 0;
   }
 
   .timer p {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
