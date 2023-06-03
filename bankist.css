@@ -506,9 +506,10 @@ body {
 .timer p {
   font-size: 17px;
 }
-/* 1.media queries for smaller phone upto 480px */
 
-@media (max-width: 480px) {
+/* 1.media queries for smaller phone upto 300px */
+
+@media (max-width: 400px) {
   /*Navigation Bar */
 
   .navigation {
@@ -535,7 +536,7 @@ body {
 
   .login .input-login-username {
     border-radius: 10px;
-    width: 35%;
+    width: 30%;
     margin-left: 0%;
   }
 
@@ -544,7 +545,7 @@ body {
   .login .input-login-pin {
     border-radius: 10px;
     margin-left: 5%;
-    width: 35%;
+    width: 30%;
   }
 
   /* Login Button In Naviagtion Bar  */
@@ -562,7 +563,7 @@ body {
   }
 
   .balance-section .balance-text {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .balance-section .balance-text h1 {
@@ -570,11 +571,11 @@ body {
   }
   .balance-section .balance-text .date-time {
     opacity: 0.5;
-    font-size: 10px;
+    font-size: 07px;
   }
 
   .balance-section .balance {
-    margin-left: 43%;
+    margin-left: 38%;
     font-size: 20px;
   }
 
@@ -582,8 +583,8 @@ body {
 
   .modal {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 30%;
+    left: 15%;
   }
 
   .modal h2 {
@@ -598,16 +599,16 @@ body {
 
   .cross {
     position: absolute;
-    top: 24%;
-    left: 74.5%;
+    top: 29%;
+    left: 81%;
   }
 
   /* Disclaimer-- Account Doesn't exist  */
 
   .modal2 {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 30%;
+    left: 15%;
   }
 
   .modal2 h2 {
@@ -622,15 +623,15 @@ body {
 
   .cross2 {
     position: absolute;
-    top: 24%;
-    left: 74.5%;
+    top: 29%;
+    left: 81%;
   }
 
   /* Movements */
 
   .movements {
     width: 95vw;
-    height: 50vh;
+    height: 40vh;
     margin: 0 5%;
     border-bottom-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -810,7 +811,7 @@ body {
     position: absolute;
     top: 82%;
     left: 3%;
-    margin-top: 12%;
+    margin-top: 5%;
     margin-bottom: 17%;
   }
 
@@ -836,7 +837,7 @@ body {
     position: absolute;
     top: 82%;
     left: 85%;
-    margin-top: 12%;
+    margin-top: 5%;
   }
 
   .sort p {
@@ -853,5 +854,1760 @@ body {
 
   .timer p {
     font-size: 13px;
+  }
+}
+
+/* 2.media queries for smaller phone upto 515px */
+
+@media (min-width: 401px) and (max-width: 515px) {
+  /*Navigation Bar */
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation .leftnav {
+    margin-top: 2%;
+    font-size: 10px;
+  }
+
+  .navigation .centernav {
+    margin-top: 2%;
+    margin-left: 40%;
+    width: 20%;
+  }
+
+  .navigation .rightnav {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Username Input In Naviagtion Bar  */
+
+  .login .input-login-username {
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 0%;
+  }
+
+  /* Pin Input In Naviagtion Bar  */
+
+  .login .input-login-pin {
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  /* Login Button In Naviagtion Bar  */
+
+  .login .login-btn {
+    margin-left: 5%;
+    font-size: 130%;
+  }
+
+  /* Balance Section */
+
+  .balance-section {
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .balance-section .balance-text {
+    margin-left: 40px;
+  }
+
+  .balance-section .balance-text h1 {
+    font-size: 15px;
+  }
+  .balance-section .balance-text .date-time {
+    opacity: 0.5;
+    font-size: 10px;
+  }
+
+  .balance-section .balance {
+    margin-left: 43%;
+    font-size: 20px;
+  }
+
+  /* Disclaimer-- Account closed  */
+
+  .modal {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 24%;
+    left: 74.5%;
+  }
+
+  /* Disclaimer-- Account Doesn't exist  */
+
+  .modal2 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  .modal2 h2 {
+    font-size: 20px;
+  }
+
+  .modal2 p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross2 {
+    position: absolute;
+    top: 34%;
+    left: 63%;
+  }
+
+  /* Movements */
+
+  .movements {
+    width: 95vw;
+    height: 50vh;
+    margin: 0 5%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .movements .movements-box {
+    padding: 15px;
+  }
+
+  .movements .movements-box .movement-type--deposit {
+    font-size: 9px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 1%;
+    margin-right: 8%;
+  }
+
+  .movements .movements-box .movement-type--withdraw {
+    font-size: 9px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px 2px;
+    margin-left: 1%;
+    margin-right: 5%;
+  }
+
+  .movements .movements-box .movement-date {
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 7px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .movements .movements-box .movement-amount {
+    font-size: 10px;
+    margin-left: 40%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Transfer Money Section */
+
+  .transfer--money {
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    padding: 10px 10px;
+    margin-top: 18%;
+  }
+
+  .transfer--money h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .transfer--money .input--box #transfer--to {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box #amount {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box .transfer-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .transfer--money .input--box--undername .input--box--undername--transferto {
+    margin-right: 10px;
+    margin-left: 2px;
+  }
+
+  /* close account */
+
+  .close--account {
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    padding: 10px 10px;
+    margin-top: 18%;
+  }
+
+  .close--account h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .close--account .input--box #user {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box #pin {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box .close--btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--user {
+    margin-left: 0px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--pin {
+    margin-left: 5px;
+  }
+
+  /* Get The Loan */
+
+  .loan {
+    width: 33%;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .loan h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .loan .input--box #amount2 {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .loan .input--box .loan-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .loan p {
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  /* Calculations */
+
+  .calculation {
+    position: absolute;
+    top: 82%;
+    left: 3%;
+    margin-top: 20%;
+    margin-bottom: 17%;
+  }
+
+  .calculation p {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .calculation .total--deposited {
+    font-size: 15px;
+  }
+
+  .calculation .total--withdrew {
+    font-size: 15px;
+  }
+
+  .calculation .total--Interest {
+    font-size: 15px;
+  }
+
+  .sort {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    margin-top: 20%;
+  }
+
+  .sort p {
+    font-size: 15px;
+  }
+
+  .timer {
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    margin-top: 45%;
+    opacity: 0;
+  }
+
+  .timer p {
+    font-size: 13px;
+  }
+}
+
+/*media queries for bigger phone upto 576px; */
+
+@media (min-width: 516px) and (max-width: 576px) {
+  /*Navigation Bar */
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation .leftnav {
+    margin-top: 2%;
+    font-size: 10px;
+  }
+
+  .navigation .centernav {
+    margin-top: 2%;
+    margin-left: 50%;
+    width: 10%;
+  }
+
+  .navigation .rightnav {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Username Input In Naviagtion Bar  */
+
+  .login .input-login-username {
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 0%;
+  }
+
+  /* Pin Input In Naviagtion Bar  */
+
+  .login .input-login-pin {
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  /* Login Button In Naviagtion Bar  */
+
+  .login .login-btn {
+    margin-left: 5%;
+    font-size: 130%;
+  }
+
+  /* Balance Section */
+
+  .balance-section {
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .balance-section .balance-text {
+    margin-left: 40px;
+  }
+
+  .balance-section .balance-text h1 {
+    font-size: 20px;
+  }
+  .balance-section .balance-text .date-time {
+    opacity: 0.5;
+    font-size: 13px;
+  }
+
+  .balance-section .balance {
+    margin-left: 50%;
+    font-size: 23px;
+  }
+
+  /* Disclaimer-- Account closed  */
+
+  .modal {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 24%;
+    left: 74.5%;
+  }
+
+  /* Disclaimer-- Account Doesn't exist  */
+
+  .modal2 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  .modal2 h2 {
+    font-size: 20px;
+  }
+
+  .modal2 p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross2 {
+    position: absolute;
+    top: 34%;
+    left: 59%;
+  }
+
+  /* Movements */
+
+  .movements {
+    width: 95vw;
+    height: 50vh;
+    margin: 0 5%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .movements .movements-box {
+    padding: 15px;
+  }
+
+  .movements .movements-box .movement-type--deposit {
+    font-size: 9px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 1%;
+    margin-right: 8%;
+  }
+
+  .movements .movements-box .movement-type--withdraw {
+    font-size: 9px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px 2px;
+    margin-left: 1%;
+    margin-right: 5%;
+  }
+
+  .movements .movements-box .movement-date {
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 7px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .movements .movements-box .movement-amount {
+    font-size: 10px;
+    margin-left: 40%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Transfer Money Section */
+
+  .transfer--money {
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    padding: 10px 10px;
+    margin-top: 18%;
+  }
+
+  .transfer--money h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .transfer--money .input--box #transfer--to {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box #amount {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box .transfer-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .transfer--money .input--box--undername .input--box--undername--transferto {
+    margin-right: 10px;
+    margin-left: 2px;
+  }
+
+  /* close account */
+
+  .close--account {
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    padding: 10px 10px;
+    margin-top: 18%;
+  }
+
+  .close--account h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .close--account .input--box #user {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box #pin {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box .close--btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--user {
+    margin-left: 0px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--pin {
+    margin-left: 5px;
+  }
+
+  /* Get The Loan */
+
+  .loan {
+    width: 33%;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .loan h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .loan .input--box #amount2 {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .loan .input--box .loan-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .loan p {
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  /* Calculations */
+
+  .calculation {
+    position: absolute;
+    top: 82%;
+    left: 3%;
+    margin-top: 20%;
+    margin-bottom: 17%;
+  }
+
+  .calculation p {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .calculation .total--deposited {
+    font-size: 15px;
+  }
+
+  .calculation .total--withdrew {
+    font-size: 15px;
+  }
+
+  .calculation .total--Interest {
+    font-size: 15px;
+  }
+
+  .sort {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    margin-top: 20%;
+  }
+
+  .sort p {
+    font-size: 15px;
+  }
+
+  .timer {
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    margin-top: 45%;
+    opacity: 0;
+  }
+
+  .timer p {
+    font-size: 13px;
+  }
+}
+
+/*media queries for smaller tabs upto 624px */
+@media (min-width: 577px) and (max-width: 632px) {
+  /*Navigation Bar */
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation .leftnav {
+    margin-top: 2%;
+    font-size: 10px;
+  }
+
+  .navigation .centernav {
+    margin-top: 2%;
+    margin-left: 50%;
+    width: 10%;
+  }
+
+  .navigation .rightnav {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Username Input In Naviagtion Bar  */
+
+  .login .input-login-username {
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 0%;
+  }
+
+  /* Pin Input In Naviagtion Bar  */
+
+  .login .input-login-pin {
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  /* Login Button In Naviagtion Bar  */
+
+  .login .login-btn {
+    margin-left: 5%;
+    font-size: 130%;
+  }
+
+  /* Balance Section */
+
+  .balance-section {
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .balance-section .balance-text {
+    margin-left: 40px;
+  }
+
+  .balance-section .balance-text h1 {
+    font-size: 20px;
+  }
+  .balance-section .balance-text .date-time {
+    opacity: 0.5;
+    font-size: 13px;
+  }
+
+  .balance-section .balance {
+    margin-left: 50%;
+    font-size: 23px;
+  }
+
+  /* Disclaimer-- Account closed  */
+
+  .modal {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 24%;
+    left: 74.5%;
+  }
+
+  /* Disclaimer-- Account Doesn't exist  */
+
+  .modal2 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  .modal2 h2 {
+    font-size: 20px;
+  }
+
+  .modal2 p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross2 {
+    position: absolute;
+    top: 34%;
+    left: 59%;
+  }
+
+  /* Movements */
+
+  .movements {
+    width: 95vw;
+    height: 50vh;
+    margin: 0 5%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .movements .movements-box {
+    padding: 15px;
+  }
+
+  .movements .movements-box .movement-type--deposit {
+    font-size: 9px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 1%;
+    margin-right: 8%;
+  }
+
+  .movements .movements-box .movement-type--withdraw {
+    font-size: 9px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px 2px;
+    margin-left: 1%;
+    margin-right: 5%;
+  }
+
+  .movements .movements-box .movement-date {
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 7px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .movements .movements-box .movement-amount {
+    font-size: 10px;
+    margin-left: 40%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Transfer Money Section */
+
+  .transfer--money {
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    padding: 10px 10px;
+    margin-top: 18%;
+  }
+
+  .transfer--money h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .transfer--money .input--box #transfer--to {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box #amount {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box .transfer-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .transfer--money .input--box--undername .input--box--undername--transferto {
+    margin-right: 10px;
+    margin-left: 2px;
+  }
+
+  /* close account */
+
+  .close--account {
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    padding: 10px 10px;
+    margin-top: 18%;
+  }
+
+  .close--account h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .close--account .input--box #user {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box #pin {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box .close--btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--user {
+    margin-left: 0px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--pin {
+    margin-left: 5px;
+  }
+
+  /* Get The Loan */
+
+  .loan {
+    width: 33%;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .loan h3 {
+    margin-bottom: 5%;
+    font-size: 10px;
+  }
+
+  .loan .input--box #amount2 {
+    font-size: 7px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .loan .input--box .loan-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .loan p {
+    margin-top: 10px;
+    font-size: 7px;
+  }
+
+  /* Calculations */
+
+  .calculation {
+    position: absolute;
+    top: 82%;
+    left: 3%;
+    margin-top: 20%;
+    margin-bottom: 17%;
+  }
+
+  .calculation p {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .calculation .total--deposited {
+    font-size: 15px;
+  }
+
+  .calculation .total--withdrew {
+    font-size: 15px;
+  }
+
+  .calculation .total--Interest {
+    font-size: 15px;
+  }
+
+  .sort {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    margin-top: 20%;
+  }
+
+  .sort p {
+    font-size: 15px;
+  }
+
+  .timer {
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    margin-top: 45%;
+    opacity: 0;
+  }
+
+  .timer p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 633px) and (max-width: 750px) {
+  /*Navigation Bar */
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation .leftnav {
+    margin-top: 2%;
+    font-size: 20px;
+  }
+
+  .navigation .centernav {
+    margin-top: 2%;
+    margin-left: 50%;
+    width: 10%;
+  }
+
+  .navigation .rightnav {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Username Input In Naviagtion Bar  */
+
+  .login .input-login-username {
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 0%;
+  }
+
+  /* Pin Input In Naviagtion Bar  */
+
+  .login .input-login-pin {
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  /* Login Button In Naviagtion Bar  */
+
+  .login .login-btn {
+    margin-left: 5%;
+    font-size: 130%;
+  }
+
+  /* Balance Section */
+
+  .balance-section {
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .balance-section .balance-text {
+    margin-left: 55px;
+  }
+
+  .balance-section .balance-text h1 {
+    font-size: 25px;
+  }
+  .balance-section .balance-text .date-time {
+    opacity: 0.5;
+    font-size: 17px;
+  }
+
+  .balance-section .balance {
+    margin-left: 50%;
+    font-size: 25px;
+  }
+
+  /* Disclaimer-- Account closed  */
+
+  .modal {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 24%;
+    left: 74.5%;
+  }
+
+  /* Disclaimer-- Account Doesn't exist  */
+
+  .modal2 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  .modal2 h2 {
+    font-size: 20px;
+  }
+
+  .modal2 p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross2 {
+    position: absolute;
+    top: 34%;
+    left: 51.5%;
+  }
+
+  /* Movements */
+
+  .movements {
+    width: 95vw;
+    height: 50vh;
+    margin: 0 5%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .movements .movements-box {
+    padding: 15px;
+  }
+
+  .movements .movements-box .movement-type--deposit {
+    font-size: 13px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 1%;
+    margin-right: 8%;
+  }
+
+  .movements .movements-box .movement-type--withdraw {
+    font-size: 13px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px 2px;
+    margin-left: 1%;
+    margin-right: 5%;
+  }
+
+  .movements .movements-box .movement-date {
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .movements .movements-box .movement-amount {
+    font-size: 15px;
+    margin-left: 40%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Transfer Money Section */
+
+  .transfer--money {
+    width: 33%;
+    height: 20%;
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .transfer--money h3 {
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+
+  .transfer--money .input--box #transfer--to {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box #amount {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box .transfer-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .transfer--money .input--box--undername .input--box--undername--transferto {
+    margin-right: 15px;
+    margin-left: 2px;
+  }
+
+  /* close account */
+
+  .close--account {
+    width: 33%;
+    height: 20%;
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .close--account h3 {
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+
+  .close--account .input--box #user {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box #pin {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box .close--btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--user {
+    margin-left: 0px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--pin {
+    margin-left: 10px;
+  }
+
+  /* Get The Loan */
+
+  .loan {
+    width: 33%;
+    height: 20%;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    padding: 10px 10px;
+    margin-top: 37%;
+  }
+
+  .loan h3 {
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+
+  .loan .input--box #amount2 {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 17px;
+    border-radius: 5px;
+  }
+
+  .loan .input--box .loan-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .loan p {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  /* Calculations */
+
+  .calculation {
+    position: absolute;
+    top: 82%;
+    left: 3%;
+    margin-top: 25%;
+    margin-bottom: 17%;
+  }
+
+  .calculation p {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .calculation .total--deposited {
+    font-size: 25px;
+  }
+
+  .calculation .total--withdrew {
+    font-size: 25px;
+  }
+
+  .calculation .total--Interest {
+    font-size: 25px;
+  }
+
+  .sort {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    margin-top: 25%;
+  }
+
+  .sort p {
+    font-size: 20px;
+  }
+
+  .timer {
+    position: absolute;
+    top: 100%;
+    left: 37%;
+    margin-top: 58%;
+    opacity: 0;
+  }
+
+  .timer p {
+    font-size: 20px;
+  }
+}
+
+/*media queries for tabs */
+
+@media (min-width: 751px) and (max-width: 1020px) {
+  /*Navigation Bar */
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation .leftnav {
+    margin-top: 2%;
+    font-size: 20px;
+  }
+
+  .navigation .centernav {
+    margin-top: 2%;
+    margin-left: 50%;
+    width: 10%;
+  }
+
+  .navigation .rightnav {
+    margin-top: 10%;
+    margin-left: 15%;
+  }
+
+  /* Username Input In Naviagtion Bar  */
+
+  .login .input-login-username {
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 0%;
+  }
+
+  /* Pin Input In Naviagtion Bar  */
+
+  .login .input-login-pin {
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  /* Login Button In Naviagtion Bar  */
+
+  .login .login-btn {
+    margin-left: 5%;
+    font-size: 130%;
+  }
+
+  /* Balance Section */
+
+  .balance-section {
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .balance-section .balance-text {
+    margin-left: 55px;
+  }
+
+  .balance-section .balance-text h1 {
+    font-size: 30px;
+  }
+  .balance-section .balance-text .date-time {
+    opacity: 0.5;
+    font-size: 17px;
+  }
+
+  .balance-section .balance {
+    margin-left: 55%;
+    font-size: 30px;
+  }
+
+  /* Disclaimer-- Account closed  */
+
+  .modal {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  .modal h2 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 24%;
+    left: 74.5%;
+  }
+
+  /* Disclaimer-- Account Doesn't exist  */
+
+  .modal2 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+
+  .modal2 h2 {
+    font-size: 20px;
+  }
+
+  .modal2 p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .cross2 {
+    position: absolute;
+    top: 34%;
+    left: 59%;
+  }
+
+  /* Movements */
+
+  .movements {
+    width: 95vw;
+    height: 50vh;
+    margin: 0 5%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .movements .movements-box {
+    padding: 15px;
+  }
+
+  .movements .movements-box .movement-type--deposit {
+    font-size: 13px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 1%;
+    margin-right: 8%;
+  }
+
+  .movements .movements-box .movement-type--withdraw {
+    font-size: 13px;
+    width: 15%;
+    border-radius: 15px;
+    padding: 5px 2px;
+    margin-left: 1%;
+    margin-right: 5%;
+  }
+
+  .movements .movements-box .movement-date {
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .movements .movements-box .movement-amount {
+    font-size: 15px;
+    margin-left: 40%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Transfer Money Section */
+
+  .transfer--money {
+    width: 33%;
+    height: 20%;
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .transfer--money h3 {
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+
+  .transfer--money .input--box #transfer--to {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box #amount {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box .transfer-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .transfer--money .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .transfer--money .input--box--undername .input--box--undername--transferto {
+    margin-right: 35px;
+    margin-left: 2px;
+  }
+
+  /* close account */
+
+  .close--account {
+    width: 33%;
+    height: 20%;
+    width: 33%;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    padding: 10px 10px;
+    margin-top: 25%;
+  }
+
+  .close--account h3 {
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+
+  .close--account .input--box #user {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box #pin {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 13px;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box .close--btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .close--account .input--box--undername {
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--user {
+    margin-left: 0px;
+  }
+
+  .close--account .input--box--undername .input--box--undername--Confirm--pin {
+    margin-left: 15px;
+  }
+
+  /* Get The Loan */
+
+  .loan {
+    width: 33%;
+    height: 20%;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    padding: 10px 10px;
+    margin-top: 35%;
+  }
+
+  .loan h3 {
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+
+  .loan .input--box #amount2 {
+    font-size: 12px;
+    width: 25%;
+    margin-right: 10%;
+    padding: 17px;
+    border-radius: 5px;
+  }
+
+  .loan .input--box .loan-btn {
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .loan p {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  /* Calculations */
+
+  .calculation {
+    position: absolute;
+    top: 82%;
+    left: 3%;
+    margin-top: 25%;
+    margin-bottom: 17%;
+  }
+
+  .calculation p {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .calculation .total--deposited {
+    font-size: 25px;
+  }
+
+  .calculation .total--withdrew {
+    font-size: 25px;
+  }
+
+  .calculation .total--Interest {
+    font-size: 25px;
+  }
+
+  .sort {
+    display: flex;
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    margin-top: 25%;
+  }
+
+  .sort p {
+    font-size: 25px;
+  }
+
+  .timer {
+    position: absolute;
+    top: 100%;
+    left: 38%;
+    margin-top: 55%;
+    opacity: 0;
+  }
+
+  .timer p {
+    font-size: 20px;
   }
 }
